@@ -180,6 +180,7 @@ class App extends React.Component {
       }
     }
     return(
+      <div id='main'>
       <div id='timer'>
         <h1>25x5Clock <span className='indicator' style={indicator}>🟢</span></h1>
         <div id='timer-flex'>
@@ -218,7 +219,8 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-        <div className='float'>{ this.state.date }
+      </div>
+        <div className='float'>Made with React
           <audio id='beep' preload="auto" src='https://assets.mixkit.co/sfx/preview/mixkit-data-scaner-2847.mp3'/>
         </div>
       </div>
